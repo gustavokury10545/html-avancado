@@ -9,33 +9,76 @@ body{
 
 header{
     background-color: rgb(2, 136, 118);
-    color:rgb(255, 255, 255)
+    color:rgb(255, 255, 255);
     padding: 1rem;
 
 }
 
 nav{
-
+    margin-top: 0.5rem;
 }
 
 nav ul{
 display: flex;
 list-style: none;
 padding: 0;
-font-size: larger;
+gap: 1rem;
 }
-
-main{
-    background-color: rgb(211, 255, 249);
-}
-
 nav a{
     font-weight:bold ;
     text-decoration: none;
-    
-    
+    color: aliceblue;
 
 }
+
+
+
+main{
+    background-color: rgb(211, 255, 249);
+    padding: 1rem;
+    flex: 1;
+}
+
+
 footer{
     background-color: aqua;
+    padding: 1rem;
+    text-align: center;
+}
+
+.sidebar-direita ul ul {
+    padding-left: 16px;
+    max-height: 0px;
+    overflow: hidden;
+    opacity: 0; 
+    transform: translateY(-10px);
+    transition: max-height 1s ease, opacity 1s ease, transform 1s ease;
+
+}
+.sidebar-direita ul ul li:hover{
+    background-color: #666;
+}
+
+.sidebar-direita ul li:hover > ul{
+    max-height: 500px;
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+aside.sidebar-direita {
+    width: 250px;
+    height: 50vh;
+    background-color: #333;
+    color: #fff;
+    padding: 0 15px;
+}
+ul li {
+    list-style-type: none;
+    
+}
+aside.sidebar-direita ul>li {
+    padding: 10px;
+}
+p{
+    text-align: center;
 }
