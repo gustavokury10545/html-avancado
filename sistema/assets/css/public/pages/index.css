@@ -1,0 +1,94 @@
+*{
+    box-sizing:border-box;
+}
+
+.avaliacoes-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    h1{
+        display: block;
+        align-items: center;
+        margin: 0;
+        font-size: 1.5rem;
+        color: var(#00796b);
+    }
+}
+
+.quarto-card{
+    border-radius: 2px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer{
+    background-color: #00796b;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+header{
+    background-color:#00796b;
+    color: #fff;
+    padding: 1rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1{
+        margin:0;
+        font-size: 1.5rem;
+    }
+}
+
+
+nav{
+    margin-top: 0.5rem;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    &:focus,
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.avaliacao-card{
+    border-radius: 2px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+img{
+    float: left;
+    margin-right: 10px;
+}
+.objetivo{
+    font-size: 1.54rem;
+    display: flex;
+}
+.avaliacao-info{
+    font-size:1rem
+}
+
+.avaliacao-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
