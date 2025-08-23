@@ -1,7 +1,11 @@
 *{
     box-sizing:border-box;
 }
-
+main{
+    flex: 1;
+    padding: 2rem;
+    background-color: #e0f2f1;
+}
 .avaliacoes-header{
     display: flex;
     align-items: center;
